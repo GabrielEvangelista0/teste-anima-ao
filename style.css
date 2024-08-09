@@ -2,10 +2,25 @@ body{
     background-color: black;
     color: white;
     font-family: 'montserrat';
+    transition: 500ms;
 }
 
 main{
     min-height: 100vh;
+}
+
+.contador{
+    display: flex;
+    height: 10rem;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+button{
+    font-size: 1.5rem;
 }
 
 div{
@@ -38,6 +53,7 @@ p{
 
 .blue{
     background-color: blue;
+    transition: 500ms;
 }
 
 .animacao1{

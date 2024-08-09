@@ -28,7 +28,8 @@ btn.addEventListener('click', () => {
     i++;
     cont.innerHTML = `${i}`; // Atualiza o conteúdo do elemento 'cont' com o novo valor de 'i'
     // Alterna a classe 'blue' em todos os elementos com a classe 'hidden'
-    hidden.forEach(e => e.classList.toggle('blue'));
+    document.querySelector("body").classList.toggle("blue")
+    //hidden.forEach(e => e.classList.toggle('blue'));
     console.log(hidden);
 });
 
