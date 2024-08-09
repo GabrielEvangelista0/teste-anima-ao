@@ -27,7 +27,7 @@ const observer = new IntersectionObserver((entries) => {
 btn.addEventListener('click', () => {
     i++;
     cont.innerHTML = `${i}`; // Atualiza o conteúdo do elemento 'cont' com o novo valor de 'i'
-    // Alterna a classe 'blue' em todos os elementos com a classe 'hidden'
+    // Alterna a classe 'blue' em todos os elementos body
     document.querySelector("body").classList.toggle("blue")
     //hidden.forEach(e => e.classList.toggle('blue'));
     console.log(hidden);
