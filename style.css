@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: 'montserrat';
+}
+
+main{
+    min-height: 100vh;
+}
+
+div{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 10vh;
+}
+
+p{
+    width: 70%;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(50%);
+    transition: all 1s;
+}
+
+.mostrar{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+.blue{
+    background-color: blue;
+}
+
+.animacao1{
+    animation: animacao 3s;
+
+}
+
+.rodar{
+    animation: rodar 3s;
+
+}
+
+.entrarLado{
+    animation: entrarLado 3s;
+}
+
+@keyframes animacao{
+    from{
+        position: relative;
+        top: 10%;
+        transform: translate(30px);
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes rodar{
+    from{
+        position: relative;
+        top: 10%;
+        transform: rotate(5deg);
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        top: 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes entrarLado{
+    from{
+        position: relative;
+        left: 50%;
+        opacity: 0;
+    }
+
+    to{
+        position: relative;
+        left: 0%;
+        opacity: 1;
+    }
+}
